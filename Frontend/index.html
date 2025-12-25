@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio</title>
-    <link rel="stylesheet" href="index.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    
 </head>
 <body>
     <!-- navigation section -->
     <header>
         <div class="wrapper">
             <div class="logo">
-                <a href="#index.html">
-                    <p class="my">My</p>
-                    <p class="portfolio">Portfolio</p>
+                
+                    <span class="red">My</span>
+                    <span class="blue">Portfolio</span>
+                    
             </div>
-            <div class="nav">
-                <ul>
+            <nav>            
+                <ul class="nav">
                     <li>
                         <a href="#aboutme">About Me</a>
                     </li>
@@ -37,7 +39,8 @@
                     </li>
                     
                 </ul>
-            </div>
+            </nav>
+            
         </div>
 
     </header>
@@ -53,11 +56,11 @@
                     </div>
                     <div class="info">
                         <p class="name">Hey There, I'm</p>
-                        <p class="name">Abhishek Yadav</p>
+                        <h1 class="name">Abhishek Yadav</h1>
                         <p class="role">Java Full Stack Developer</p>
                     </div>
                 </div>
-                <div class="tag line">
+                <div class="tagline">
                     <p>I build scalable backend systems and modern web apps.</p>
                     <p>Turning ideas into fully functional products, front to back.</p>
                 </div>
@@ -67,19 +70,23 @@
         <!-- About Me Section -->
             <section class="about-me">
                 <div class="wrapper">
-                   <h2 ><p class="about">About</p>
-                    <p class="me">Me</p>
-                </h2>
+                   <h2 >
+                    <span class="red">About</span>
+                    <span class="blue">Me</span>
+                    </h2>
                 <div class="self-intro">
                     <div class="info">
                         <p>Hello! I'm Abhishek Yadav, a passionate Java Full Stack Developer with a knack for building scalable backend systems and modern web applications. With a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into fully functional products.</p>
                         <p>My journey in software development has equipped me with the skills to create seamless user experiences while ensuring robust server-side performance. I enjoy collaborating with cross-functional teams to bring innovative solutions to life.</p>
-                        <p>When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or honing my skills through continuous learning.</p>
-                        <p>Let's connect and create something amazing together!</p>
+                        <p>When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or honing my skills through continuous learning.</p> 
                     </div>
+
                     <div class="image">
-                        <img src="./public/images/profile-photo.png" alt="about me image"/>
+                        <img src="./public/images/profile-photo.png" alt="about me image">
+                    </div>
+
                 </div>
+                <p>Let's connect and create something amazing together!</p>
                 </div>
             </section>
 
@@ -87,21 +94,21 @@
         <section class="projects">
             <div class="wrapper">
                 <h2>
-                    <p class="my">My</p>
-                    <p class="projects">Projects</p>
+                    <span class="red">My</span>
+                    <span class="blue">Projects</span>
                 </h2>
-                <div class="project-container">
+                <div class="project-container container">
                     <!-- Project items will go here -->
-                     <div class="card 1">
-                        <p>Ai Career Coach</p>
-                        <div class="decription">
-                            <div class="contnet">
+                     <div class="project-card">
+                        <h3>Ai Career Coach</h3>
+                        <div class="description">
+                            <div class="content">
                                 <p>Problem statement: Career guidance is often inaccessible and lacks personalization.</p>
                                 <p>Description of Ai Career Coach</p>
                                 <p>Technologies used: Java, Spring Boot, React, MongoDB</p>
                             </div>
                             <div class="image">
-                                <img src="./public/images/ai career coach.png" alt="AI Career Coach project image"/>
+                                <img src="./public/images/project-image.png" alt="AI Career Coach project image"/>
                             </div>
                         </div>
                         <div class="button">
@@ -109,25 +116,6 @@
                             <button>live demo</button>
                         </div>
                      </div>
-
-                      <div class="card 2">
-                        <p>Ai Career Coach</p>
-                        <div class="decription">
-                            <div class="contnet">
-                                <p>Problem statement: Career guidance is often inaccessible and lacks personalization.</p>
-                                <p>Description of Ai Career Coach</p>
-                                <p>Technologies used: Java, Spring Boot, React, MongoDB</p>
-                            </div>
-                            <div class="image">
-                                <img src="./public/images/ai career coach.png" alt="AI Career Coach project image"/>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <button>code preview</button>
-                            <button>live demo</button>
-                        </div>
-                     </div>
-
                 </div>
                 <div class="load">
                    <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
@@ -140,14 +128,14 @@
               <section class="skills">
             <div class="wrapper">
                 <h2>
-                    <p class="my">My</p>
-                    <p class="skills">Skills</p>
+                    <span class="red">My</span>
+                    <span class="blue">Skills</span>
                 </h2>
-                <div class="skill-container">
+                <div class="skill-container container">
                     <!-- skills items will go here -->
-                     <div class="card 1">
-                        <p>Backend Skills</p>
-                            <div class="contnet">
+                     <div class="skill-card">
+                        <h3>Backend Skills</h3>
+                            <div class="content">
                                 <p>Programming languages: Java, Python,JavaScript,c programming</p>
                                 <p>Frameworks: Spring Boot</p>
                                 <p>Databases: MySQL, MongoDB</p>
@@ -160,9 +148,9 @@
                             </div>
                     </div>  
 
-                      <div class="card 2">
-                        <p>Frontend Skills</p>
-                            <div class="contnet">
+                      <!-- <div class="skill-card">
+                        <h3>Frontend Skills</h3>
+                            <div class="content">
                                 <p>Programming languages: HTML, CSS, JavaScript</p>
                                 <p>Frameworks: React</p>
                                 <p>Build Tools: Webpack, Babel, Vite</p>
@@ -173,7 +161,7 @@
                                 <p>Responsive Design: Media Queries, Flexbox, Grid</p>
                                 <p>Performance Optimization: Lazy Loading, Code Splitting</p>
                             </div>
-                     </div>
+                     </div> -->
                 </div>
 
                 <div class="load">
@@ -187,10 +175,11 @@
             <section class="education">
                 <div class="wrapper">
                     <h2 >
-                        <p class="my">My</p>
-                        <p class="education">Education</p>
+                        <span class="red">My</span>
+                        <span class="blue">Education</span>
                     </h2>
-                    <div class="education">
+                    <div class="container">
+                    <div class="education-card">
                         <h3>Educational Details</h3>
                         <div class="description">
                             <p>Bachelor of Technology in Computer Science</p>
@@ -201,16 +190,18 @@
                             <p>Percentage:72</p>
                         </div>
                     </div>    
-                    <div class="certification">
+                    <!-- <div class="education-card">
                         <h3>Certifications</h3>
                         <div class="description">
                             <p>Java Programming and Software Engineering Fundamentals</p    >
                             <p>Offered by Duke University on Coursera</p>
                             <p>Full-Stack Web Development with React</p >
                             <p>Offered by The Hong Kong University of Science and Technology on Coursera</p>
-                        </div>
-                    </div>  
-                      <div class=load>
+                        </div> 
+                    </div>  -->
+                    </div>
+
+                    <div class=load>
                           <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
                              <a href="#"><img src="./public/images/right-icon.png" alt="next icon"/></a>
                     </div>
@@ -221,34 +212,34 @@
             <section class="blog">
                 <div class="wrapper">
                     <h2 >
-                        <p class="my">My</p>
-                        <p class="blog">Blog</p>
+                        <span class="red">My</span>
+                        <span class="blue">Blog</span>
                     </h2>   
-                    <div class="blog-posts">
-                        <div class="post 1">
+                    <div class="post-container container">
+                        <div class="blog-post">
                             <div class="image">
-                                <img src="./public/images/blog1.png" alt="blog post 1 image"/>
+                                <img src="./public/images/project-image.png" alt="blog post 1 image"/>
                             </div>
                             <h3>Understanding Java Streams: A Comprehensive Guide</h3>
                             <p>An in-depth look at Java Streams, their benefits, and practical examples of how to use them effectively in your applications.</p>
                             <a href="#">Read More</a>
                         </div>
-                        <div class="post 2">
+                        <div class="blog-post">
                             <div class="image">
-                                <img src="./public/images/blog2.png" alt="blog post 2 image"/>
+                                <img src="./public/images/project-image.png" alt="blog post 2 image"/>
                             </div>
-                            <p>Building a RESTful API with Spring Boot</p>
+                            <h3>Building a RESTful API with Spring Boot</h3>
                             <p>A step-by-step tutorial on creating a RESTful API using Spring Boot, covering essential concepts and best practices.</p>
                             <a href="#">Read More</a>
                         </div>
-                        <div class="post 3">
+                        <!-- <div class="blog-post">
                             <div class="image">
                                 <img src="./public/images/blog3.png" alt="blog post 3 image"/>
                             </div>
                             <p>Getting Started with React: A Beginner's Guide</p>
                             <p>This blog post introduces the basics of React, including components, state management, and hooks, to help beginners get started.</p>
                             <a href="#">Read More</a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class=load>
                           <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
@@ -263,13 +254,13 @@
         <div class="wrapper">
             <p>Copyright © 2024 My-Portfolio. All rights reserved.</p>
             <div class="connect">
-                <div class="left">
+                <div class="left card">
                     <p>Connect with me:</p>
                     <a href="#"><img src="./public/images/Gmail-Light logo.png" alt="email"/></a>
                     <a href="#"><img src="./public/images/linkedin logo.png" alt="linkedin"/></a>
                     <a href="#"><img src="./public/images/Location logo.png" alt="location"/></a>
                 </div>
-                <div class="right">
+                <div class="right card">
                     <p>Code with me:</p>
                     <a href="#"><img src="./public/images/Github-Dark logo.png" alt="github"/></a>
                     <a href="#"><img src="./public/images/leetcode logo.png" alt="leetcode"/></a>
@@ -290,7 +281,7 @@
         </div>
 
     </footer>
-    <script src="index.js"/>
+    <script src="index.js"></script>
     
 </body>
 </html>
