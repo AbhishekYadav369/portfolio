@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-Stack Developer Portfolio">
     <title>My-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
     
 </head>
 <body>
@@ -15,13 +16,14 @@
     <header>
         <div class="wrapper">
             <div class="logo">
-                
                     <span class="red">My</span>
                     <span class="blue">Portfolio</span>
                     
             </div>
-            <nav>            
+            <nav>  
+                <img src="./assets/icons/menu.png" alt="menu-icon" id="menu-icon" onclick="on()"/>          
                 <ul class="nav">
+                    <img src="./assets/icons/cancel.png" alt="cancel-icon" id="cancel-icon" onclick="off()"/>
                     <li>
                         <a href="#aboutme">About Me</a>
                     </li>
@@ -47,13 +49,10 @@
 
     <main>
         <!-- Hero Section -->
-         <section class="hero">
+         <section class="hero page">
             <div class="wrapper">
-                <div class="card">
-
-                    <div class="image">
-                        <img src="./public/images/photo frame.png" alt="profile picture"/>
-                    </div>
+                <div class="hero-card">
+                        <img src="./assets/images/hero.png" alt="profile picture"/>
                     <div class="info">
                         <p class="name">Hey There, I'm</p>
                         <h1 class="name">Abhishek Yadav</h1>
@@ -68,7 +67,7 @@
          </section>
 
         <!-- About Me Section -->
-            <section class="about-me">
+            <section class="about-me page">
                 <div class="wrapper">
                    <h2 >
                     <span class="red">About</span>
@@ -80,10 +79,8 @@
                         <p>My journey in software development has equipped me with the skills to create seamless user experiences while ensuring robust server-side performance. I enjoy collaborating with cross-functional teams to bring innovative solutions to life.</p>
                         <p>When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or honing my skills through continuous learning.</p> 
                     </div>
-
-                    <div class="image">
-                        <img src="./public/images/profile-photo.png" alt="about me image">
-                    </div>
+                        <img src="./assets/images/about-me.png" alt="about-me-image">
+                    
 
                 </div>
                 <p>Let's connect and create something amazing together!</p>
@@ -91,7 +88,7 @@
             </section>
 
         <!-- projects section -->
-        <section class="projects">
+        <section class="projects page">
             <div class="wrapper">
                 <h2>
                     <span class="red">My</span>
@@ -99,7 +96,7 @@
                 </h2>
                 <div class="project-container container">
                     <!-- Project items will go here -->
-                     <div class="project-card">
+                     <div class="project-card card">
                         <h3>Ai Career Coach</h3>
                         <div class="description">
                             <div class="content">
@@ -107,9 +104,7 @@
                                 <p>Description of Ai Career Coach</p>
                                 <p>Technologies used: Java, Spring Boot, React, MongoDB</p>
                             </div>
-                            <div class="image">
-                                <img src="./public/images/project-image.png" alt="AI Career Coach project image"/>
-                            </div>
+                                <img src="./assets/images/project.png" alt="AI Career Coach project image"/>
                         </div>
                         <div class="button">
                             <button>code preview</button>
@@ -118,14 +113,14 @@
                      </div>
                 </div>
                 <div class="load">
-                   <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
-                     <a href="#"><img src="./public/images/right-icon.png" alt="next icon"/></a>
+                   <img src="./assets/icons/left.png" alt="previous-icon"/>
+                     <img src="./assets/icons/right.png" alt="next-icon"/>
                 </div>
             </div>
         </section>
 
         <!-- My Skills -->
-              <section class="skills">
+              <section class="skills page">
             <div class="wrapper">
                 <h2>
                     <span class="red">My</span>
@@ -133,7 +128,22 @@
                 </h2>
                 <div class="skill-container container">
                     <!-- skills items will go here -->
-                     <div class="skill-card">
+                     <div class="skill-card card">
+                        <h3>Backend Skills</h3>
+                            <div class="content">
+                                <p>Programming languages: Java, Python,JavaScript,c programming</p>
+                                <p>Frameworks: Spring Boot</p>
+                                <p>Databases: MySQL, MongoDB</p>
+                                <p>ORM tools: Hibernate, Spring Data JPA</p>
+                                <p>Version Control: Git, GitHub</p>
+                                <p>Testing tool & Monitoring: JUnit, Mockito, Postman</p>
+                                <p>Containerization: Docker</p>
+                                <p>Cloud Platforms: AWS, Heroku</p>
+                                <p>CI/CD: Jenkins, GitHub Actions</p>                              
+                            </div>
+                    </div>  
+
+                    <div class="skill-card card">
                         <h3>Backend Skills</h3>
                             <div class="content">
                                 <p>Programming languages: Java, Python,JavaScript,c programming</p>
@@ -165,21 +175,21 @@
                 </div>
 
                 <div class="load">
-                   <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
-                     <a href="#"><img src="./public/images/right-icon.png" alt="next icon"/></a>
+                   <img src="./assets/icons/left.png" alt="previous-icon"/>
+                     <img src="./assets/icons/right.png" alt="next-icon"/>
                 </div>
             </div>
             </section>
 
         <!-- Education Section -->
-            <section class="education">
+            <section class="education page">
                 <div class="wrapper">
                     <h2 >
                         <span class="red">My</span>
                         <span class="blue">Education</span>
                     </h2>
                     <div class="container">
-                    <div class="education-card">
+                    <div class="edu-card card">
                         <h3>Educational Details</h3>
                         <div class="description">
                             <p>Bachelor of Technology in Computer Science</p>
@@ -190,7 +200,7 @@
                             <p>Percentage:72</p>
                         </div>
                     </div>    
-                    <!-- <div class="education-card">
+                     <div class="edu-card card">
                         <h3>Certifications</h3>
                         <div class="description">
                             <p>Java Programming and Software Engineering Fundamentals</p    >
@@ -198,39 +208,35 @@
                             <p>Full-Stack Web Development with React</p >
                             <p>Offered by The Hong Kong University of Science and Technology on Coursera</p>
                         </div> 
-                    </div>  -->
+                    </div>  
                     </div>
 
-                    <div class=load>
-                          <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
-                             <a href="#"><img src="./public/images/right-icon.png" alt="next icon"/></a>
-                    </div>
+                    <div class="load">
+                   <img src="./assets/icons/left.png" alt="previous-icon"/>
+                     <img src="./assets/icons/right.png" alt="next-icon"/>
+                </div>
                 </div>
             </section>
 
         <!-- Blog Section -->
-            <section class="blog">
+            <section class="blog page">
                 <div class="wrapper">
                     <h2 >
                         <span class="red">My</span>
                         <span class="blue">Blog</span>
                     </h2>   
                     <div class="post-container container">
-                        <div class="blog-post">
-                            <div class="image">
-                                <img src="./public/images/project-image.png" alt="blog post 1 image"/>
-                            </div>
+                        <div class="blog-post card">
+                                <img src="./assets/images/project.png" alt="blog post 1 image"/>
                             <h3>Understanding Java Streams: A Comprehensive Guide</h3>
                             <p>An in-depth look at Java Streams, their benefits, and practical examples of how to use them effectively in your applications.</p>
-                            <a href="#">Read More</a>
+                            <button>Read More</button>
                         </div>
-                        <div class="blog-post">
-                            <div class="image">
-                                <img src="./public/images/project-image.png" alt="blog post 2 image"/>
-                            </div>
+                        <div class="blog-post card">
+                                <img src="./assets/images/project.png" alt="blog post 2 image"/>
                             <h3>Building a RESTful API with Spring Boot</h3>
                             <p>A step-by-step tutorial on creating a RESTful API using Spring Boot, covering essential concepts and best practices.</p>
-                            <a href="#">Read More</a>
+                            <button>Read More</button>
                         </div>
                         <!-- <div class="blog-post">
                             <div class="image">
@@ -241,10 +247,10 @@
                             <a href="#">Read More</a>
                         </div> -->
                     </div>
-                    <div class=load>
-                          <a href="#"><img src="./public/images/left-icon.png" alt="previous icon"/></a>
-                             <a href="#"><img src="./public/images/right-icon.png" alt="next icon"/></a>
-                    </div>
+                    <div class="load">
+                   <img src="./assets/icons/left.png" alt="previous-icon"/>
+                     <img src="./assets/icons/right.png" alt="next-icon"/>
+                </div>
                 </div>
             </section>
 
@@ -256,15 +262,15 @@
             <div class="connect">
                 <div class="left card">
                     <p>Connect with me:</p>
-                    <a href="#"><img src="./public/images/Gmail-Light logo.png" alt="email"/></a>
-                    <a href="#"><img src="./public/images/linkedin logo.png" alt="linkedin"/></a>
-                    <a href="#"><img src="./public/images/Location logo.png" alt="location"/></a>
+                    <a href="#"><img src="./assets/logo/Gmail.png" alt="gmail"/></a>
+                    <a href="#"><img src="./assets/logo/linkedin.png" alt="linkedin"/></a>
+                    <a href="#"><img src="./assets/logo/Location.png" alt="location"/></a>
                 </div>
                 <div class="right card">
                     <p>Code with me:</p>
-                    <a href="#"><img src="./public/images/Github-Dark logo.png" alt="github"/></a>
-                    <a href="#"><img src="./public/images/leetcode logo.png" alt="leetcode"/></a>
-                    <a href="#"><img src="./public/images/Hackerranklogo.png" alt="hackerrank"/></a>
+                    <a href="#"><img src="./assets/logo/Github.png" alt="github"/></a>
+                    <a href="#"><img src="./assets/logo/leetcode.png" alt="leetcode"/></a>
+                    <a href="#"><img src="./assets/logo/Hackerrank.png" alt="hackerrank"/></a>
                 </div>
               
             </div>
@@ -281,7 +287,8 @@
         </div>
 
     </footer>
-    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,171 @@
+@import "components.css";
+@import "layout.css";
+@import "responsive.css";
+
+:root{
+    --footer-hover:#913b8e;
+    --nav-hover:#e09d9d;
+    --white:#FFFFFF;
+    --black:#000000;
+    --proj-card-head-bg:#9C3593;
+    --skill-card-head-bg:#C23E3E;
+     --dark-blue:#462685;
+    --blue-shade:#0d0dc4;
+    --bg-shade:#f3ecec;
+    --red-color:#E20A0A;
+    --purple-color:#FE03B3;
+    --navbar-shade:#D8DCB9;
+    --section-shade:#E9DCDC;
+    --hero-tag-bg:#C23E3EC9;
+    --shadow:6px 6px 4px 0 rgba(0, 0, 0, 0.25);
+    --navbar-color:linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.05%, rgba(37, 49, 164, 0.17) 82.95%, rgba(40, 54, 180, 0.18) 90.86%, rgba(44, 59, 197, 0.20) 99.25%), linear-gradient(90deg, rgba(191, 43, 43, 0.00) 0%, rgba(191, 43, 43, 0.11) 57.09%, rgba(191, 43, 43, 0.14) 72.14%, rgba(191, 43, 43, 0.17) 87.34%, rgba(191, 43, 43, 0.20) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(87, 7, 119, 0.07) 60.58%, rgba(99, 8, 135, 0.08) 68.65%, rgba(116, 10, 158, 0.10) 80.38%, rgba(144, 12, 196, 0.12) 100%), #D3B989;
+  
+--button-color:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(121, 16, 38, 0.20) 73.13%, rgba(121, 15, 38, 0.20) 86.57%, rgba(112, 16, 41, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(78, 14, 56, 0.50) 50%, rgba(82, 15, 54, 0.50) 75%, rgba(78, 15, 57, 0.50) 100%), rgba(49, 22, 110, 0.80); 
+--skill-card-bg:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(173, 14, 22, 0.15) 75%, rgba(173, 14, 22, 0.20) 100%), rgba(248, 234, 234, 0.88);
+
+--footer-bg:linear-gradient(90deg, rgba(0, 0, 0, 0.20) 0%, rgba(216, 188, 10, 0.20) 25.96%, rgba(69, 13, 137, 0.20) 62.98%, rgba(227, 4, 8, 0.20) 100%), #683b67;
+}
+
+
+
+@media(min-width:320px) and (max-width:800px){
+    h1{    font-size:3rem;}
+/* hero-section */
+.hero .wrapper{  gap:2rem;  }
+
+.hero > .wrapper > .hero-card{
+    flex-direction:column;
+    align-items:center;
+    height:30rem;    
+    width:20rem;
+}
+
+.hero > .wrapper > .hero-card img{
+    width:16rem;
+    height:16rem;
+}
+ .hero-card > .info{
+    width:fit-content;
+    height:16rem;
+    font-size:1.5rem;
+ }
+ 
+.wrapper .info > p{ font-size:2rem;}
+
+.hero > .wrapper > .tagline{
+    flex-direction:column;
+    font-size:1rem;
+}
+
+
+
+/* about-me section */
+h2{ font-size:2.5rem; 
+    margin:1rem 0 0 2rem;
+}
+
+.self-intro .info p{ font-size:1rem;}
+ 
+.self-intro{
+    flex-direction:column;
+    gap:0;
+}
+
+.self-intro .info{
+     width:90%;
+    height:fit-content;
+    font-size:1rem;
+}
+
+.about-me > .wrapper > p{
+    text-align:center;
+    font-size:1.5rem;
+}
+
+.self-intro > img, .self-intro > .image > img{
+    width:18rem;
+    height:18rem;  
+}
+
+
+/* my-projects section  */
+
+.project .wrapper,.skills .wrapper, .education .wrapper,.blog .wrapper{ gap:2rem;}
+
+.project-card{
+         width:90%;
+        height:fit-content;
+        margin:0 auto;
+        border-radius:1rem;
+    }
+
+.project-card > .description{ flex-direction:column;}
+
+.project-card > .description > .content{
+    display:flex;
+    width:auto;
+    flex-direction:column;
+  font-size: 1rem;
+}
+
+.project-card > .description > img{
+
+    border-radius:1rem;
+    height:16rem;
+    width:16rem;
+    align-self:center;
+    margin:0;
+}
+
+h3,.skill-card h3,.edu-card h3{ font-size:1.5rem;}
+
+.project-card button{
+    margin:0 1rem;
+    font-size:1rem;
+}
+
+/*skills-section &education-section */
+
+.skill-card, .edu-card{
+    width: 90%;
+    border-radius: 1rem;
+    min-height:fit-content;
+  }
+
+.skill-card > .content ,.edu-card > .description{width:95%;}
+
+.container{  gap:1rem;}
+
+.skill-card p, .edu-card p{
+    padding:0.2rem;
+    height:100%;
+    font-size: 1rem;
+}
+
+/*blog -section */ 
+
+.blog-post{
+    width:80%;
+    min-height:fit-content;
+    border-radius: 1rem;
+    padding:0.5rem;
+}
+
+.blog-post > img{
+    width:100%;
+    height:16rem;
+}
+
+.blog-post > h3{
+    background-color:#C23E3E;
+    margin-top:-2rem;
+    font-size:1.5rem;
+}
+.blog-post p{ font-size:1rem;}
+
+
+.load img{
+    height:1.8rem;
+}
+
+}
