@@ -2,6 +2,7 @@
 header{
     position:sticky;
     top:0;
+    z-index:20;
 }
 header > .wrapper{
     flex-direction:row;
@@ -55,6 +56,7 @@ footer > .wrapper{
     color:white;
     gap:2rem;
     background: var(--footer-bg);
+    
 }
 
 footer > .wrapper > .connect{
@@ -74,8 +76,8 @@ footer > .wrapper > .connect > .card{
     
 }
  
-footer .wrapper .card a{  transform: scale(0.7);}
-footer .wrapper .card p{    font-size:2.5rem;}
+footer .wrapper .card img{  transform: scale(0.5);}
+footer .wrapper .card{    font-size:2.5rem;}
 
 footer > .wrapper > .feed-back > form {
     display:flex;
@@ -85,6 +87,7 @@ footer > .wrapper > .feed-back > form {
     width:100%;
     height:3rem;
     gap:2rem;
+    padding-bottom:3rem;
 }
 
 footer > .wrapper > .feed-back > form > input{
@@ -103,11 +106,11 @@ footer form > button{ background:var(--skill-card-head-bg);}
     font-weight:500;
 } 
 
-footer .wrapper .card a:hover{
-    transform: scale(0.8);
+footer .wrapper .card img:hover{
+    transform: scale(0.6);
     transition:0.3s;
     background-color:var(--footer-hover);
-    padding:0.5rem 0.5rem 0 0.5rem;
+    padding:0.5rem;
     border-radius:1rem;
 }
 
@@ -198,26 +201,26 @@ footer > .wrapper > .connect > .card{
     gap:0.5rem;
 }
  
-footer .wrapper .card a{  transform: scale(0.5);}
-footer .wrapper .card p{    font-size:1.3rem;}
+footer .wrapper .card img{  transform: scale(0.4);}
+footer .wrapper .card{    font-size:1.3rem;}
 
 footer > .wrapper > .feed-back > form {
     width:100%;
     height:2rem;
-    gap:1rem;
+    gap:0.5rem;
 }
 
 footer > .wrapper > .feed-back > form > input{
-    width:10rem;
+    width:14rem;
     height:2rem;
     border-radius: 1rem;
 }
 
-footer .wrapper .card a:hover{
-    transform: scale(0.6);
+footer .wrapper .card img:hover{
+    transform: scale(0.5);
     transition:0.3s;
     background-color:var(--footer-hover);
-    padding:0.5rem 0.5rem 0 0.5rem;
+    padding:0.5rem;
     border-radius:1rem;
 }
 
@@ -228,6 +231,6 @@ button:hover{
     background-color: var(--red-color);
     transition:0.3s;
 }
-.feed-back label{font-size:1.3rem;}
+.feed-back label{display:none;}
 
 }

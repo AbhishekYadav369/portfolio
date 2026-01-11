@@ -62,7 +62,7 @@ button{
 
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .load img:hover{
@@ -71,3 +71,7 @@ button{
 
 #menu-icon{ display:none;}
 #cancel-icon{ display:none;}
+
+.hover{
+    cursor:pointer;
+}

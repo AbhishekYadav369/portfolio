@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,87 +9,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css"/>
-    
+    <link rel="stylesheet" href="css/index.css" />
+
 </head>
+
 <body>
     <!-- navigation section -->
     <header>
         <div class="wrapper">
             <div class="logo">
-                    <span class="red">My</span>
-                    <span class="blue">Portfolio</span>
-                    
+                <span class="red">My</span>
+                <span class="blue">Portfolio</span>
+
             </div>
-            <nav>  
-                <img src="./assets/icons/menu.png" alt="menu-icon" id="menu-icon" onclick="on()"/>          
+            <nav>
+                <img src="./assets/icons/menu.png" alt="menu-icon" id="menu-icon"  />
                 <ul class="nav">
-                    <img src="./assets/icons/cancel.png" alt="cancel-icon" id="cancel-icon" onclick="off()"/>
+                    <img src="./assets/icons/cancel.png" alt="cancel-icon" id="cancel-icon" />
                     <li>
-                        <a href="#aboutme">About Me</a>
+                        <a id="aboutme">About Me</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a id="projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#skills">Skills</a>
+                        <a id="skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#education">Education</a>
+                        <a id="education">Education</a>
                     </li>
                     <li>
-                        <a href="#blog">Blog</a>
+                        <a id="blog">Blog</a>
                     </li>
-                    
+
                 </ul>
             </nav>
-            
+
         </div>
 
     </header>
 
     <main>
         <!-- Hero Section -->
-         <section class="hero page">
+        <section class="hero page" id="hero-section">
             <div class="wrapper">
                 <div class="hero-card">
-                        <img src="./assets/images/hero.png" alt="profile picture"/>
+                    <img />
                     <div class="info">
-                        <p class="name">Hey There, I'm</p>
-                        <h1 class="name">Abhishek Yadav</h1>
-                        <p class="role">Java Full Stack Developer</p>
+                        <p class="name" id="salutaion"></p>
+                        <h1 class="name"></h1>
+                        <p class="role"></p>
                     </div>
                 </div>
                 <div class="tagline">
-                    <p>I build scalable backend systems and modern web apps.</p>
-                    <p>Turning ideas into fully functional products, front to back.</p>
-                </div>
+                    <p></p>
+                    <p></p>
+                 </div>
             </div>
-         </section>
+        </section>
 
         <!-- About Me Section -->
-            <section class="about-me page">
-                <div class="wrapper">
-                   <h2 >
+        <section class="about-me page" id="aboutme-section">
+            <div class="wrapper">
+                <h2>
                     <span class="red">About</span>
                     <span class="blue">Me</span>
-                    </h2>
+                </h2>
                 <div class="self-intro">
                     <div class="info">
-                        <p>Hello! I'm Abhishek Yadav, a passionate Java Full Stack Developer with a knack for building scalable backend systems and modern web applications. With a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into fully functional products.</p>
-                        <p>My journey in software development has equipped me with the skills to create seamless user experiences while ensuring robust server-side performance. I enjoy collaborating with cross-functional teams to bring innovative solutions to life.</p>
-                        <p>When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or honing my skills through continuous learning.</p> 
+                        <p></p>
+                        <p></p>
+                        <p></p>
                     </div>
-                        <img src="./assets/images/about-me.png" alt="about-me-image">
-                    
+                    <img />
+
 
                 </div>
-                <p>Let's connect and create something amazing together!</p>
-                </div>
-            </section>
+                <p class="conclusion"></p>
+            </div>
+        </section>
 
         <!-- projects section -->
-        <section class="projects page">
+        <section class="projects page" id="projects-section">
             <div class="wrapper">
                 <h2>
                     <span class="red">My</span>
@@ -96,31 +98,32 @@
                 </h2>
                 <div class="project-container container">
                     <!-- Project items will go here -->
-                     <div class="project-card card">
-                        <h3>Ai Career Coach</h3>
+                    <div class="project-card card">
+                        <h3></h3>
                         <div class="description">
                             <div class="content">
-                                <p>Problem statement: Career guidance is often inaccessible and lacks personalization.</p>
-                                <p>Description of Ai Career Coach</p>
-                                <p>Technologies used: Java, Spring Boot, React, MongoDB</p>
+                                <p class="problem-statement">
+                                </p>
+                                <p class="description"></p>
+                                <p class="tech-stack"></p>
                             </div>
-                                <img src="./assets/images/project.png" alt="AI Career Coach project image"/>
+                            <img  />
                         </div>
                         <div class="button">
-                            <button>code preview</button>
-                            <button>live demo</button>
+                            <button id="code-prev">code preview</button>
+                            <button id="live-demo">live demo</button>
                         </div>
-                     </div>
+                    </div>
                 </div>
                 <div class="load">
-                   <img src="./assets/icons/left.png" alt="previous-icon"/>
-                     <img src="./assets/icons/right.png" alt="next-icon"/>
+                    <img src="./assets/icons/left.png" alt="previous-icon" />
+                    <img src="./assets/icons/right.png" alt="next-icon" />
                 </div>
             </div>
         </section>
 
         <!-- My Skills -->
-              <section class="skills page">
+        <section class="skills page" id="skills-section">
             <div class="wrapper">
                 <h2>
                     <span class="red">My</span>
@@ -128,157 +131,107 @@
                 </h2>
                 <div class="skill-container container">
                     <!-- skills items will go here -->
-                     <div class="skill-card card">
-                        <h3>Backend Skills</h3>
-                            <div class="content">
-                                <p>Programming languages: Java, Python,JavaScript,c programming</p>
-                                <p>Frameworks: Spring Boot</p>
-                                <p>Databases: MySQL, MongoDB</p>
-                                <p>ORM tools: Hibernate, Spring Data JPA</p>
-                                <p>Version Control: Git, GitHub</p>
-                                <p>Testing tool & Monitoring: JUnit, Mockito, Postman</p>
-                                <p>Containerization: Docker</p>
-                                <p>Cloud Platforms: AWS, Heroku</p>
-                                <p>CI/CD: Jenkins, GitHub Actions</p>                              
-                            </div>
-                    </div>  
-
                     <div class="skill-card card">
-                        <h3>Backend Skills</h3>
-                            <div class="content">
-                                <p>Programming languages: Java, Python,JavaScript,c programming</p>
-                                <p>Frameworks: Spring Boot</p>
-                                <p>Databases: MySQL, MongoDB</p>
-                                <p>ORM tools: Hibernate, Spring Data JPA</p>
-                                <p>Version Control: Git, GitHub</p>
-                                <p>Testing tool & Monitoring: JUnit, Mockito, Postman</p>
-                                <p>Containerization: Docker</p>
-                                <p>Cloud Platforms: AWS, Heroku</p>
-                                <p>CI/CD: Jenkins, GitHub Actions</p>                              
-                            </div>
-                    </div>  
-
-                      <!-- <div class="skill-card">
-                        <h3>Frontend Skills</h3>
-                            <div class="content">
-                                <p>Programming languages: HTML, CSS, JavaScript</p>
-                                <p>Frameworks: React</p>
-                                <p>Build Tools: Webpack, Babel, Vite</p>
-                                <p>State Management: Redux, Context API</p>
-                                <p>Testing: Jest, React Testing Library</p>
-                                <p>Version Control: Git, GitHub</p>
-                                <p>UI Libraries: Material UI, Bootstrap</p>
-                                <p>Responsive Design: Media Queries, Flexbox, Grid</p>
-                                <p>Performance Optimization: Lazy Loading, Code Splitting</p>
-                            </div>
-                     </div> -->
+                        <h3></h3>
+                        <div class="content">
+                            <p id="programming-lang"></p>
+                            <p id="frameworks"></p>
+                            <p id="databases"></p>
+                            <p id="orm"></p>
+                            <p id="version-control"></p>
+                            <p id="testing"></p>
+                            <p id="containerization"></p>
+                            <p id="cloud"></p>
+                            <p id="ci-cd"></p>
+                        </div>
+                    </div>
+                   
                 </div>
 
                 <div class="load">
-                   <img src="./assets/icons/left.png" alt="previous-icon"/>
-                     <img src="./assets/icons/right.png" alt="next-icon"/>
+                    <img src="./assets/icons/left.png" alt="previous-icon" />
+                    <img src="./assets/icons/right.png" alt="next-icon" />
                 </div>
             </div>
-            </section>
+        </section>
 
         <!-- Education Section -->
-            <section class="education page">
-                <div class="wrapper">
-                    <h2 >
-                        <span class="red">My</span>
-                        <span class="blue">Education</span>
-                    </h2>
-                    <div class="container">
+        <section class="education page" id="education-section">
+            <div class="wrapper">
+                <h2>
+                    <span class="red">My</span>
+                    <span class="blue">Education</span>
+                </h2>
+                <div class="container">
                     <div class="edu-card card">
-                        <h3>Educational Details</h3>
+                        <h3></h3>
                         <div class="description">
-                            <p>Bachelor of Technology in Computer Science</p>
-                            <p>Vidyavardhini's College Of Engineering and Technology, 2023 - 2027</p>
-                            <p>cgpa:</p>
-                            <p>Secondary & Senior Secondary Schooling</p>
-                            <p>Rahual International School, 2021-2023</p>
-                            <p>Percentage:72</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
                         </div>
-                    </div>    
-                     <div class="edu-card card">
-                        <h3>Certifications</h3>
-                        <div class="description">
-                            <p>Java Programming and Software Engineering Fundamentals</p    >
-                            <p>Offered by Duke University on Coursera</p>
-                            <p>Full-Stack Web Development with React</p >
-                            <p>Offered by The Hong Kong University of Science and Technology on Coursera</p>
-                        </div> 
-                    </div>  
                     </div>
+                    
+                </div>
 
-                    <div class="load">
-                   <img src="./assets/icons/left.png" alt="previous-icon"/>
-                     <img src="./assets/icons/right.png" alt="next-icon"/>
+                <div class="load">
+                    <img src="./assets/icons/left.png" alt="previous-icon" />
+                    <img src="./assets/icons/right.png" alt="next-icon" />
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
         <!-- Blog Section -->
-            <section class="blog page">
-                <div class="wrapper">
-                    <h2 >
-                        <span class="red">My</span>
-                        <span class="blue">Blog</span>
-                    </h2>   
-                    <div class="post-container container">
-                        <div class="blog-post card">
-                                <img src="./assets/images/project.png" alt="blog post 1 image"/>
-                            <h3>Understanding Java Streams: A Comprehensive Guide</h3>
-                            <p>An in-depth look at Java Streams, their benefits, and practical examples of how to use them effectively in your applications.</p>
-                            <button>Read More</button>
-                        </div>
-                        <div class="blog-post card">
-                                <img src="./assets/images/project.png" alt="blog post 2 image"/>
-                            <h3>Building a RESTful API with Spring Boot</h3>
-                            <p>A step-by-step tutorial on creating a RESTful API using Spring Boot, covering essential concepts and best practices.</p>
-                            <button>Read More</button>
-                        </div>
-                        <!-- <div class="blog-post">
-                            <div class="image">
-                                <img src="./public/images/blog3.png" alt="blog post 3 image"/>
-                            </div>
-                            <p>Getting Started with React: A Beginner's Guide</p>
-                            <p>This blog post introduces the basics of React, including components, state management, and hooks, to help beginners get started.</p>
-                            <a href="#">Read More</a>
-                        </div> -->
+        <section class="blog page" id="blog-section">
+            <div class="wrapper">
+                <h2>
+                    <span class="red">My</span>
+                    <span class="blue">Blog</span>
+                </h2>
+                <div class="post-container container">
+                    <div class="blog-post card">
+                        <img />
+                        <h3></h3>
+                        <p></p>
+                        <button>Read More</button>
                     </div>
-                    <div class="load">
-                   <img src="./assets/icons/left.png" alt="previous-icon"/>
-                     <img src="./assets/icons/right.png" alt="next-icon"/>
                 </div>
-                </div>
-            </section>
 
+                <div class="load">
+                    <img src="./assets/icons/left.png" alt="previous-icon" />
+                    <img src="./assets/icons/right.png" alt="next-icon" />
+                </div>
+                    
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="wrapper">
-            <p>Copyright © 2024 My-Portfolio. All rights reserved.</p>
+            <p>Copyright © 2026 My-Portfolio. All rights reserved by me.</p>
             <div class="connect">
                 <div class="left card">
-                    <p>Connect with me:</p>
-                    <a href="#"><img src="./assets/logo/Gmail.png" alt="gmail"/></a>
-                    <a href="#"><img src="./assets/logo/linkedin.png" alt="linkedin"/></a>
-                    <a href="#"><img src="./assets/logo/Location.png" alt="location"/></a>
+                    Connect:
+                    <img id="gmail"/>
+                    <img id="linkedin"/>
+                    <img id="location"/>
                 </div>
                 <div class="right card">
-                    <p>Code with me:</p>
-                    <a href="#"><img src="./assets/logo/Github.png" alt="github"/></a>
-                    <a href="#"><img src="./assets/logo/leetcode.png" alt="leetcode"/></a>
-                    <a href="#"><img src="./assets/logo/Hackerrank.png" alt="hackerrank"/></a>
+                    Code:
+                    <img id="github"/>
+                    <img id="leetcode"/>
+                    <img id="hackerrank"/>
                 </div>
-              
+
             </div>
 
             <div class="feed-back">
                 <form action="#">
                     <label for="feedback">Feedback:</label>
-                    <input type="text" id="feedback" name="feedback" placeholder="Your feedback here"/>
+                    <input type="text" id="feedback" name="feedback" placeholder="Your feedback here" />
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -287,8 +240,8 @@
         </div>
 
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
-    
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
