@@ -15,3 +15,5 @@ export function setSkillContent() {
     $("#skills-section .content #cloud").text(cloud);
     $("#skills-section .content #ci-cd").text(ci_cd);
 }
+
+

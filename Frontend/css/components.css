@@ -62,11 +62,17 @@ button{
 
 
 .card:hover{
-    transform: scale(1.01);
+    transform: scale(1.002);
 }
 
-.load img:hover{
+/* .load img:hover{
+    transform:scale(0.9);
+    opacity:0.5;
+} */
+
+.load-button{
     transform:scale(0.8);
+    opacity:0.5;
 }
 
 #menu-icon{ display:none;}

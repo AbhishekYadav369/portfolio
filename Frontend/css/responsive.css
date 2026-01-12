@@ -64,11 +64,11 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    gap:auto;
+    gap:1rem;
     text-align:justify;
     padding:1rem;
     width:50%;
-    height:26rem;
+    min-height:24rem;
 }
 
 .about-me > .wrapper > p{

@@ -2,6 +2,7 @@ import { feedbackLayout } from "../data/layout.js";
 
 const { location, github, leetcode, hackerrank,gmail,linkedin } =feedbackLayout;
 
+const gmail_url=gmail.url+"&to="+encodeURIComponent(gmail.to);
    function setFooterLinks(){
     $("#gmail").attr({src: gmail.img_src, alt: gmail.alt});
     $("#linkedin").attr({src: linkedin.img_src, alt: linkedin.alt});
@@ -12,7 +13,7 @@ const { location, github, leetcode, hackerrank,gmail,linkedin } =feedbackLayout;
   }
 
    function setFooterLinksURL(){
-    $("#gmail").click(()=>window.open(gmail.url, "_blank"));
+    $("#gmail").click(()=>window.open(gmail_url, "_blank"));
     $("#linkedin").click(()=>window.open(linkedin.url, "_blank"));
     $("#location").click(()=>window.open(location.url, "_blank"));
     $("#github").click(()=>window.open(github.url, "_blank"));

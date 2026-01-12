@@ -29,7 +29,7 @@ const projectCard=[
         title:"AI Career Coach",
         content:{
             problem_statement:"Career guidance is often inaccessible and lacks personalization.",
-            description:"Description of Ai Career Coach",
+            solution:"Description of Ai Career Coach",
             tech_stack:"Technologies used: Java, Spring Boot, React, MongoDB"
         },
         img_src:"./assets/images/project.png",

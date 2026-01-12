@@ -1,17 +1,38 @@
-import { setHeroContent } from "./component/hero.js";
+  import { setHeroContent } from "./component/hero.js";
 import { setAboutmeContent } from "./component/about.js"; 
 import { setProjectContent } from "./component/project.js";
 import { setSkillContent } from "./component/skill.js";
 import { setEducationContent } from "./component/education.js";
 import { setBlogContent } from "./component/blog.js";
 import { setFooterContent } from "./component/footer.js";
+
+import {setLoadButton,loadButtonfunction} from "./component/load.js";
+
 // function to close navigation menu
 function closeNav() {
   $(".nav").css("display", "none");
 }
 
+//function for setting sections content
+
+function setContent(){
+  setHeroContent(),
+  setAboutmeContent(),
+  setProjectContent(),
+  setSkillContent(),
+  setEducationContent(),
+  setBlogContent(),
+  setFooterContent(),
+  setLoadButton()
+}
+
+// $("load").
+
 // behaviour after page load
-$(document).ready(function () {
+$(document).ready(()=> {
+
+  // Setting the component's data dynamically
+
   $("#menu-icon").click(function () {
     $(".nav").css("display", "block");
   });
@@ -52,16 +73,11 @@ $(document).ready(function () {
   });
   
 //   Setting section content
-
-
+  setContent();
+  loadButtonfunction();
+  
 });
 
-$(document).ready(function () {
-  setHeroContent(),
-  setAboutmeContent(),
-  setProjectContent(),
-  setSkillContent(),
-  setEducationContent(),
-  setBlogContent()
-  setFooterContent();
-});
+
+
+
