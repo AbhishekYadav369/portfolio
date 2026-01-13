@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -212,13 +214,13 @@
         <div class="wrapper">
             <p>Copyright © 2026 My-Portfolio. All rights reserved by me.</p>
             <div class="connect">
-                <div class="left card">
+                <div class="left card" id="connect">
                     Connect:
                     <img id="gmail"/>
                     <img id="linkedin"/>
                     <img id="location"/>
                 </div>
-                <div class="right card">
+                <div class="right card" id="code">
                     Code:
                     <img id="github"/>
                     <img id="leetcode"/>
@@ -229,7 +231,7 @@
 
             <div class="feed-back">
                 <form action="#">
-                     <input type="text" id="feedback" name="feedback" placeholder="Your feedback here" />
+                     <textarea id="feedback" name="feedback" placeholder="Your feedback here" ></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -239,7 +241,7 @@
 
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>

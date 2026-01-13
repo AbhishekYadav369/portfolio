@@ -1,8 +1,11 @@
 import { feedbackLayout } from "../data/layout.js";
-
-const { location, github, leetcode, hackerrank,gmail,linkedin } =feedbackLayout;
+ 
+const{code,connect}=feedbackLayout;
+const {  github, leetcode, hackerrank} =code;
+const {location,gmail,linkedin }=connect;
 
 const gmail_url=gmail.url+"&to="+encodeURIComponent(gmail.to);
+
    function setFooterLinks(){
     $("#gmail").attr({src: gmail.img_src, alt: gmail.alt});
     $("#linkedin").attr({src: linkedin.img_src, alt: linkedin.alt});
